@@ -3,6 +3,7 @@ Use this if you want to build Ubuntu touch for oneplus one
 
 
 ###Work In Progres
+This is not a yet a working project
 
 # Before Starting
 
@@ -37,3 +38,6 @@ Use this if you want to build Ubuntu touch for oneplus one
  repo init -u https://code-review.phablet.ubuntu.com/p/aosp/platform/manifest.git -b phablet-4.4.2_r1
  repo sync -j 8
  ```
+ 
+ # Build
+ ### work in progres
