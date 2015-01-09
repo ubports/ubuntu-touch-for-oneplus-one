@@ -16,7 +16,7 @@ This is not yet a working project
 
  ### Automatic setup of development environment (remember do this will install in you curent directory:
   ```
-  bash <(curl -s https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/auto-setup.sh)
+  bash <(curl -s https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/auto-setup.sh) -s
   ```
  ### Manual setup of development environment 
  ```
