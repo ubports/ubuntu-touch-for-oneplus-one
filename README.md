@@ -5,17 +5,20 @@ Use this if you want to build Ubuntu touch for oneplus one
 ###Work In Progres
 This is not yet a working project
 
-# Before Starting
+
+#For Deveopers
+
+## Before Starting
 
 1. You will need a Ubuntu!
 
 2. You will need to install packages which are used to build and donwload all repositories (This will take a while! Getting 15Gb via the network is quite slow even if you have a good connection.) :
 
- ### Automatic setup (remember do this will install in you curent directory:
+ ### Automatic setup of development environment (remember do this will install in you curent directory:
   ```
   bash <(curl -s https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/auto-setup.sh)
   ```
- ### Manual setup
+ ### Manual setup of development environment 
  ```
   sudo apt-get install git gnupg flex bison gperf build-essential \
   zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -39,5 +42,5 @@ This is not yet a working project
  repo sync -j 8
  ```
  
- # Build
+ ## Build
  ### work in progres
