@@ -9,7 +9,7 @@ This is not a yet a working project
 
 1. You will need a Ubuntu!
 
-2. You will need to install packages which are used to build and donwload all repositories :
+2. You will need to install packages which are used to build and donwload all repositories (This will take a while! Getting 15Gb via the network is quite slow even if you have a good connection.) :
 
  ### Automatic setup (remember do this will install in you curent directory:
   ```
