@@ -15,10 +15,8 @@ setup()
 {
 echo "Starting: download the ubuntu touch repositories"
 sleep 2
-mkdir -p phablet-4.4.2_r1
-cd phablet-4.4.2_r1
-repo init -u https://code-review.phablet.ubuntu.com/p/aosp/platform/manifest.git -b phablet-4.4.2_r1
-repo sync -j 8
+mkdir -p phablet-dev-bootstrap
+phablet-dev-bootstrap phablet-dev-bootstrap
 echo "Done setup repositories"
 }
 
