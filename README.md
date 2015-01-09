@@ -3,7 +3,7 @@ Use this if you want to build Ubuntu touch for oneplus one
 
 
 ###Work In Progres
-This is not a yet a working project
+This is not yet a working project
 
 # Before Starting
 
