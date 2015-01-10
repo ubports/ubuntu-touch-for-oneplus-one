@@ -19,6 +19,13 @@ mkdir -p phablet-dev-bootstrap
 phablet-dev-bootstrap phablet-dev-bootstrap
 echo "Done setup repositories"
 }
+setupc()
+{
+echo "continueing: download the ubuntu touch repositories"
+sleep 2
+phablet-dev-bootstrap -c phablet-dev-bootstrap
+echo "Done setup repositories"
+}
 
 usage()
 {
@@ -30,7 +37,8 @@ Auto setup toos for ubuntu touch for oneplus one
 OPTIONS:
    -h      Show Help
    -s      This will do a normal setup
-   -n	   This will Only download setup the ubuntu touch repositories
+   -c	   Continue download the ubuntu touch repositories
+   -n	   This will Only download the ubuntu touch repositories
    -t      This will Only install toos that is needed to build ubuntu touch
 
 EOF
@@ -40,7 +48,7 @@ if [[ $UBUNTU == *"Ubuntu"* ]]
 then
 	if [[ $UBUNTU == *"14.04"* || $UBUNTU == *"14.10"* ]]
 	then
-		while getopts “htns” OPTION
+		while getopts “htnsc” OPTION
 		do
   		   case $OPTION in
 			h)
@@ -49,6 +57,10 @@ then
 			;;
 			t)
 			tools
+			exit
+			;;
+			c)
+			setupc
 			exit
 			;;
 			n)
