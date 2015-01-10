@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="ubuntu-touch-oneplus-one/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="cm-11" />
+  <project name="ubuntu-touch-oneplus-one/android_kernel_oneplus_one" path="kernel/oneplus/bacon" remote="github" revision="master" />
+  <project name="ubuntu-touch-oneplus-one/proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="github" revision="cm-11" />
+</manifest>
