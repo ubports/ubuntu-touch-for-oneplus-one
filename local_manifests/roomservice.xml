@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="ubuntu-touch-oneplus-one/android_device_oneplus_bacon" path="device/oneplus/bacon" remote="github" revision="cm-11" />
-  <project name="ubuntu-touch-oneplus-one/android_kernel_oneplus_one" path="kernel/oneplus/bacon" remote="github" revision="master" />
-  <project name="ubuntu-touch-oneplus-one/proprietary_vendor_oneplus" path="vendor/oneplus/bacon" remote="github" revision="cm-11" />
+  <remote fetch="git://github.com/" name="github" />
+  <remote  name="pace"
+           fetch="https://github.com/pacerom"
+           review="review.pacerom.com" />
+  <remote  name="oa"
+           fetch="https://github.com/OnePlusAosp/"
+           sync-j="4" />
+  <remote  name="unorom"
+           fetch="https://github.com/UnORoms/"
+           sync-j="4" />
+  <project name="ubuntu-touch-oneplus-one/android_device_oneplus_bacon-1" path="device/oneplus/bacon" remote="github" revision="v4.4" />
+  <project name="ubuntu-touch-oneplus-one/android_kernel_oneplus_one" path="kernel/oneplus/msm8974" remote="github" revision="master" />
+
+
+  <project path="device/oppo/common" name="device_oppo_common" remote="pace" revision="v4.4" groups="device,find7" />
+  <project path="device/oppo/msm8974-common" name="device_oppo_msm8974-common" remote="oa" revision="v4.4" groups="device,find7" />
+  <project path="device/qcom/common" name="device_qcom_common" remote="pace" revision="v4.4" groups="qcom" />
+
+  <project path="vendor/oppo" name="TheMuppets/proprietary_vendor_oppo" remote="github" revision="cm-11.0"/>
+  <project path="vendor/oneplus" name="ubuntu-touch-oneplus-one/proprietary_vendor_oneplus" remote="github" revision="cm-11.0" />
+  <project path="vendor/pace" name="vendor_pace" remote="pace" revision="v4.4" />
+
+        
+
 </manifest>
