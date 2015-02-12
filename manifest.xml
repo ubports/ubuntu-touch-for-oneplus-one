@@ -16,8 +16,8 @@ Remember to add local_manifests to .repo folder
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="aosp/platform/abi/cpp" groups="pdk" />
- <!-- <project path="bionic" name="aosp/platform/bionic" groups="pdk" /> -->
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" />
+  <project path="bionic" name="aosp/platform/bionic" groups="pdk" /> 
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" groups="pdk" /> 
   <project path="development" name="aosp/platform/development" />
   <project path="device/asus/deb" name="aosp/device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="aosp/device/asus/flo" groups="device,flo" />
@@ -84,9 +84,9 @@ Remember to add local_manifests to .repo folder
   <project path="external/wpa_supplicant_8" name="aosp/platform/external/wpa_supplicant_8" groups="pdk" />
   <project path="external/yaffs2" name="aosp/platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="aosp/platform/external/zlib" groups="pdk" />
- <!-- <project path="frameworks/av" name="aosp/platform/frameworks/av" groups="pdk" /> -->
- <!-- <project path="frameworks/base" name="aosp/platform/frameworks/base" /> -->
- <!-- <project path="frameworks/native" name="aosp/platform/frameworks/native" groups="pdk" /> -->
+  <project path="frameworks/av" name="aosp/platform/frameworks/av" groups="pdk" /> 
+  <project path="frameworks/base" name="aosp/platform/frameworks/base" />  
+  <project path="frameworks/native" name="aosp/platform/frameworks/native" groups="pdk" /> 
   <project path="frameworks/opt/emoji" name="aosp/platform/frameworks/opt/emoji" />
   <project path="hardware/akm" name="aosp/platform/hardware/akm" />
   <project path="hardware/broadcom/libbt" name="aosp/platform/hardware/broadcom/libbt" groups="pdk" />
@@ -138,11 +138,13 @@ Remember to add local_manifests to .repo folder
   <project path="prebuilts/tools" name="aosp/platform/prebuilts/tools" groups="pdk,tools" revision="refs/tags/android-4.4.2_r1" />
 
   <project path="sdk" name="aosp/platform/sdk" />
-  <project path="system/core" name="aosp/platform/system/core" groups="pdk" />
+
   <project path="system/extras" name="aosp/platform/system/extras" groups="pdk" />
-  <project path="system/media" name="aosp/platform/system/media" groups="pdk" />
+
   <project path="system/security" name="aosp/platform/system/security" groups="pdk" />
-  <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" />
+  <project path="system/core" name="aosp/platform/system/core" groups="pdk" /> 
+  <project path="system/media" name="aosp/platform/system/media" groups="pdk" />   
+  <project path="system/vold" name="aosp/platform/system/vold" groups="pdk" /> 
 
   <!-- Ubuntu specific repos -->
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" />
