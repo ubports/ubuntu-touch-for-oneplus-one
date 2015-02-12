@@ -23,32 +23,33 @@
   <project path="vendor/oneplus" name="ubuntu-touch-oneplus-one/proprietary_vendor_oneplus" remote="github" revision="cm-11.0" />
   <project path="vendor/pace" name="vendor_pace" remote="pace" revision="v4.4" />
 
-  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="pace" revision="v4.4" groups="qcom" />
+<!--  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="pace" revision="v4.4" groups="qcom" /> -->
   <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="pace" revision="v4.4" groups="qcom" />
-  <project path="hardware/qcom/display-caf-new" name="hardware_qcom_display-caf-new" remote="pace" revision="v4.4" groups="qcom" />
+  <project path="hardware/qcom/display-caf-new" name="hardware_qcom_display-caf-new" remote="pace" revision="v4.4" groups="qcom" /> -->
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" remote="pace" revision="v4.4" groups="qcom" />
   <project path="hardware/qcom/keymaster" name="hardware_qcom_keymaster" remote="pace" revision="v4.4" groups="qcom" />
-  <project path="hardware/qcom/media-caf-new" name="hardware_qcom_media-caf-new" remote="pace" revision="v4.4" groups="qcom" />
+<!--  <project path="hardware/qcom/media-caf-new" name="hardware_qcom_media-caf-new" remote="pace" revision="v4.4" groups="qcom" /> -->
   <project path="hardware/qcom/power" name="hardware_qcom_power" remote="pace" revision="v4.4" groups="qcom" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="pace" revision="v4.4" groups="qcom_wlan" />
   <project path="hardware/ril" name="hardware_ril" remote="pace" revision="v4.4" groups="pdk" />
-  <project path="bionic" name="bionic" remote="pace" revision="v4.4" groups="pdk" />
+<!--  <project path="bionic" name="bionic" remote="pace" revision="v4.4" groups="pdk" /> -->
   <project path="external/icu4c" name="external_icu4c" remote="pace" revision="v4.4" groups="pdk" />
   <project path="external/jpeg" name="external_jpeg" remote="pace" revision="v4.4" groups="pdk" />
   <project path="external/qrngd" name="external_qrngd" groups="qcom" remote="pace" revision="v4.4" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pace" revision="v4.4" groups="pdk" />
-  <project path="frameworks/av" name="frameworks_av" remote="pace" revision="v4.4" groups="pdk" />
+ <!-- <project path="frameworks/av" name="frameworks_av" remote="pace" revision="v4.4" groups="pdk" /> 
   <project path="frameworks/base" name="frameworks_base" remote="pace" revision="v4.4" />
-  <project path="frameworks/native" name="frameworks_native" remote="pace" revision="v4.4" />
+  <project path="frameworks/native" name="frameworks_native" remote="pace" revision="v4.4" /> -->
 
-<!--
-  <project path="libcore" name="libcore" remote="pace" revision="v4.4" />
-  <remove-project name="platform/packages/apps/Bluetooth" />
+
+<!--  <project path="libcore" name="libcore" remote="pace" reviion="v4.4" />-->
   <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pace" revision="v4.4" />
   <project path="external/bluetooth/bluedroid" name="external_bluetooth_bluedroid" remote="pace" revision="v4.4" groups="pdk" /> 
-  <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="oa" revision="v4.4" groups="pdk" /> > -->
+  <project path="external/libnfc-nci" name="android_external_libnfc-nci" remote="oa" revision="v4.4" groups="pdk" />
 
-
+ <!--  <project path="system/core" name="system_core" remote="pace" revision="v4.4" groups="pdk" /> 
+  <project path="system/media" name="system_media" remote="pace" revision="v4.4" groups="pdk" />
+  <project path="system/vold" name="system_vold" remote="pace" revision="v4.4" groups="pdk" />  -->
 
 
 
