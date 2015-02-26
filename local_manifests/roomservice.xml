@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Remember to copy paste https://github.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/blob/master/manifest.xml into .repo/mainifest.xml -->
 <manifest>
+  <remote fetch="git://github.com/" name="github" />
   <remote name="opo" fetch="https://github.com/ubuntu-touch-oneplus-one/" />
   <remote  name="pace"
            fetch="https://github.com/pacerom"
