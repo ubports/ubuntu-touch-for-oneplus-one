@@ -1,46 +1,9 @@
-# ubuntu-touch-for-oneplus-one
+# ubuntu Touch for Oneplus One
 Use this if you want to build Ubuntu touch for oneplus one
 
 
-###Work In Progres
-This is not yet a working project
+###How to install:
+https://forums.oneplus.net/threads/wip-ubuntu-touch-for-oneplus-one.266170/
 
-
-#For Deveopers
-
-## Before Starting
-
-1. You will need a Ubuntu!
-
-2. You will need to install packages which are used to build and donwload all repositories (This will take a while! Getting 15Gb via the network is quite slow even if you have a good connection.) :
-
- ### Automatic setup of development environment (remember do this will install in you curent directory:
-  ```
-  bash <(curl -s https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/auto-setup.sh) -s
-  ```
- ### Manual setup of development environment 
- ```
-  sudo apt-get install git gnupg flex bison gperf build-essential \
-  zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
-  libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
-  python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool
- ```
-  On Utopic (and maybe other) the 4.8 version of g++ is needed:
- ```
- sudo apt-get install g++-4.8-multilib
- ```
- Before 14.04 Trusty you'll also need to set up the tools PPA.     (https://wiki.ubuntu.com/Touch/Install#Step_1_-_Desktop_Setup)
- Then you need to install phablet-tools:
- ```
- sudo apt-get install phablet-tools
-  ```
- Downloads repositories
- ```
- mkdir -p /path/to/phablet; cd /path/to/phablet
- repo init -u https://code-review.phablet.ubuntu.com/p/aosp/platform/manifest.git -b phablet-4.4.2_r1
- repo sync -j 8
- ```
- 
- ## Build
- ### work in progres
+###How to build:
+https://forums.oneplus.net/threads/wip-ubuntu-touch-for-oneplus-one.266170/#post-9752285
