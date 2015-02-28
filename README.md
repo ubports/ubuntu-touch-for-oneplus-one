@@ -1,6 +1,4 @@
-# ubuntu Touch for Oneplus One
-Use this if you want to build Ubuntu touch for oneplus one
-
+# Ubuntu Touch for Oneplus One
 
 ###How to install:
 https://forums.oneplus.net/threads/wip-ubuntu-touch-for-oneplus-one.266170/
