@@ -26,6 +26,14 @@ sleep 2
 phablet-dev-bootstrap -c phablet-dev-bootstrap
 echo "Done setup repositories"
 }
+setupMainfests()
+{
+echo "Updates manifest"
+sleep 2
+cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/manifest.xml) >.repo/manifest.xml
+cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/local_manifests/roomservice.xml) >.repo/local_manifests/roomservice.xml
+echo "Done Updating manifest"
+}
 
 usage()
 {
@@ -40,6 +48,7 @@ OPTIONS:
    -c	   Continue download the ubuntu touch repositories
    -n	   This will Only download the ubuntu touch repositories
    -t      This will Only install toos that is needed to build ubuntu touch
+   -u      This will Only Update manifest
 
 EOF
 }
@@ -61,15 +70,22 @@ then
 			;;
 			c)
 			setupc
+			setupMainfests
 			exit
 			;;
 			n)
 			setup
+			setupMainfests
+			exit
+			;;
+			u)
+			setupMainfests
 			exit
 			;;
 			s)
 			tools
 			setup
+			setupMainfests
 			exit
 			;;
 			?)
