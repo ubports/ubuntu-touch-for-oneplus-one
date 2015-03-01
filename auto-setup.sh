@@ -31,6 +31,7 @@ setupMainfests()
 echo "Updates manifest"
 sleep 2
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/manifest.xml) >.repo/manifest.xml
+mkdir .repo/local_manifests
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/local_manifests/roomservice.xml) >.repo/local_manifests/roomservice.xml
 echo "Done Updating manifest"
 }
