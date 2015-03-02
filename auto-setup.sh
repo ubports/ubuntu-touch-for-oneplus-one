@@ -62,7 +62,7 @@ if [[ $UBUNTU == *"Ubuntu"* ]]
 then
 	if [[ $UBUNTU == *"14.04"* || $UBUNTU == *"14.10"* ]]
 	then
-		while getopts “htnsc” OPTION
+		while getopts “htnscu” OPTION
 		do
   		   case $OPTION in
 			h)
