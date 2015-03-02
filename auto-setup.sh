@@ -36,7 +36,7 @@ sleep 2
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/manifest.xml) >phablet/.repo/manifest.xml
 mkdir phablet/.repo/local_manifests
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/local_manifests/roomservice.xml) >phablet/.repo/local_manifests/roomservice.xml
-repo sync
+cd phablet && repo sync && cd ..
 echo "Done Updating manifest"
 }
 
