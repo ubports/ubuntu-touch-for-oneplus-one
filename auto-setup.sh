@@ -3,6 +3,9 @@ tools()
 {
 echo "Starting: install all tools that is needed to build ubuntu touch"
 sleep 2
+sudo add-apt-repository ppa:phablet-team/tools
+sudo apt-get update
+sudo apt-get install phablet-tools
 sudo apt-get install git gnupg flex bison gperf build-essential \
 zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
 libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
@@ -15,15 +18,15 @@ setup()
 {
 echo "Starting: download the ubuntu touch repositories"
 sleep 2
-mkdir -p phablet-dev-bootstrap
-phablet-dev-bootstrap phablet-dev-bootstrap
+mkdir -p phablet
+phablet-dev-bootstrap phablet
 echo "Done setup repositories"
 }
 setupc()
 {
 echo "continueing: download the ubuntu touch repositories"
 sleep 2
-phablet-dev-bootstrap -c phablet-dev-bootstrap
+phablet-dev-bootstrap -c phablet
 echo "Done setup repositories"
 }
 setupMainfests()
@@ -33,6 +36,7 @@ sleep 2
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/manifest.xml) >.repo/manifest.xml
 mkdir .repo/local_manifests
 cat <(curl https://raw.githubusercontent.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/master/local_manifests/roomservice.xml) >.repo/local_manifests/roomservice.xml
+repo sync
 echo "Done Updating manifest"
 }
 
