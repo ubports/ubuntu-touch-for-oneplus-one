@@ -16,6 +16,7 @@
 
 
   <project name="android_device_oneplus_bacon" path="device/oneplus/bacon" remote="opo" revision="v4.4" />
+  <project name="qcom_conn_init" path="harware/conn_init" remote="opo" revision="master" />
   <project name="android_kernel_oneplus_one" path="kernel/oneplus/msm8974" remote="opo" revision="master" />
   <project path="hardware/qcom/media-caf-new" name="android_hardware_qcom_media-caf-new" remote="cm" revision="stable/cm-11.0" />
   <project path="frameworks/opt/connectivity" name="android_frameworks_opt_connectivity" remote="cm" revision="stable/cm-11.0" />
