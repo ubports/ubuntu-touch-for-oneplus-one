@@ -3,10 +3,10 @@ tools()
 {
 echo "Starting: install all tools that is needed to build ubuntu touch"
 sleep 2
-sudo add-apt-repository ppa:phablet-team/tools
+sudo add-apt-repository -y ppa:phablet-team/tools
 sudo apt-get update
-sudo apt-get install phablet-tools
-sudo apt-get install git gnupg flex bison gperf build-essential \
+sudo apt-get --yes --force-yes install phablet-tools
+sudo apt-get --yes --force-yes install  git gnupg flex bison gperf build-essential \
 zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
 libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
 libgl1-mesa-dev g++-multilib mingw32 tofrodos \
