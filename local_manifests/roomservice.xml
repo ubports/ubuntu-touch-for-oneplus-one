@@ -2,7 +2,8 @@
 <!-- Remember to copy paste https://github.com/ubuntu-touch-oneplus-one/ubuntu-touch-for-oneplus-one/blob/master/manifest.xml into .repo/mainifest.xml -->
 <manifest>
   <remote fetch="git://github.com/" name="github" />
-  <remote name="opo" fetch="https://github.com/ubuntu-touch-oneplus-one/" />
+  <remote name="opo" 
+           fetch="https://github.com/ubports" />
   <remote  name="pace"
            fetch="https://github.com/pacerom"
            review="review.pacerom.com" />
@@ -25,7 +26,7 @@
   <project path="device/qcom/common" name="device_qcom_common" remote="pace" revision="v4.4"/>
   <project path="vendor/pace" name="vendor_pace" remote="pace" revision="v4.4" />
   <project path="vendor/oppo" name="TheMuppets/proprietary_vendor_oppo" remote="github" revision="cm-11.0"/>
-  <project path="vendor/oneplus" name="ubuntu-touch-oneplus-one/proprietary_vendor_oneplus" remote="github" revision="cm-11.0" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" remote="opo" revision="cm-11.0" />
 
 
 
