@@ -1,7 +1,7 @@
 #!/bin/bash
 tools()
 {
-echo "Starting: install all tools that is needed to build ubuntu touch"
+echo "Starting: install all tools that are needed to build ubuntu touch"
 sleep 2
 sudo add-apt-repository -y ppa:phablet-team/tools
 sudo apt-get update
